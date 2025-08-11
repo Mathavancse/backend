@@ -13,7 +13,7 @@ exports.login = async (req, res) => {
     }
 
     const ispass = await validatepassword(password, isemail?.password);
-    console.log(ispass);
+    // console.log(ispass);
 
     if (!ispass) {
       res.send("password error");
@@ -26,7 +26,7 @@ exports.login = async (req, res) => {
     );
     res.send(token);
   } catch (err) {
-    console.log(err);
+    // console.log(err);
     res.send(err);
   }
 };

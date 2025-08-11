@@ -16,7 +16,7 @@ exports.register = async (req, res) => {
     newuser.save();
     res.send(newuser);
   } catch (err) {
-    console.log(err);
+    // console.log(err);
     res.send(err);
   }
 };
