@@ -8,7 +8,7 @@ const cors = require("cors")
 connectDB()
 app.use(cors({
   origin: "http://localhost:5173",  // Replace with your React app's origin
-  // origin: "http://localhost:5174",  // Replace with your React app's origin
+  origin: "http://52.66.212.199",  // Replace with your React app's origin
   credentials: true                // Allow cookies/authorization headers
 }));
 app.use(express.json())
