@@ -6,10 +6,15 @@ const router = require("./routes/index")
 const cors = require("cors")
 
 connectDB()
+// app.use(cors({
+//   origin: "http://localhost:5173",  // Replace with your React app's origin
+//   origin: "http://52.66.212.199",  // Replace with your React app's origin
+//   credentials: true                // Allow cookies/authorization headers
+// }));
+const allowedOrigins = ["http://localhost:5173", "http://52.66.212.199"];
 app.use(cors({
-  origin: "http://localhost:5173",  // Replace with your React app's origin
-  origin: "http://52.66.212.199",  // Replace with your React app's origin
-  credentials: true                // Allow cookies/authorization headers
+  origin: allowedOrigins,
+  credentials: true,
 }));
 app.use(express.json())
 
