@@ -39,14 +39,15 @@ jobs:
           username: ${{ secrets.LIGHTSAIL_USERNAME }}
           key: ${{ secrets.LIGHTSAIL_SSH_KEY }}
           script: |
-            sudu su
-            cd /var/www/final/backend
-            npm install
-            if ! pm2 list | grep -q "finalbackend"; then
-              pm2 start index.js --name finalbackend
-            else
-              pm2 restart finalbackend
-            fi
-            pm2 save
+            sudu su -root -c "
+              cd /var/www/final/backend
+              npm install
+              if ! pm2 list | grep -q "finalbackenddd"; then
+                pm2 start index.js --name finalbackenddd
+              else
+                pm2 restart finalbackenddd
+              fi
+              pm2 save
+            "
 
 
