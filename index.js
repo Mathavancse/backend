@@ -11,7 +11,7 @@ connectDB()
 //   origin: "http://52.66.212.199",  // Replace with your React app's origin
 //   credentials: true                // Allow cookies/authorization headers
 // }));
-const allowedOrigins = ["http://localhost:5173", "http://52.66.212.199","https://mathav.xyz"];
+const allowedOrigins = ["http://localhost:5173", "http://52.66.212.199","https://mathav.xyz","https://final.mathav.xyz"];
 app.use(cors({
   origin: allowedOrigins,
   credentials: true,
