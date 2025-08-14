@@ -49,6 +49,15 @@ jobs:
               fi
               pm2 save
             "
+
+      - name: nginx restart
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.LIGHTSAIL_HOST }}
+          username: ${{ secrets.LIGHTSAIL_USERNAME }}
+          key: ${{ secrets.LIGHTSAIL_SSH_KEY }}
+          script: |
+            systemctl restart nginx
             
 
 
