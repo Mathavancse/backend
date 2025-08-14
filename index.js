@@ -21,7 +21,7 @@ app.use(express.json())
 app.use("/api",router)
 
 app.get('/', (req,res)=>{
- res.send("hello mathavan")
+ res.send("hello mathavan sundar vasanth")
 }) 
 
 app.get('/no', (req,res)=>{
