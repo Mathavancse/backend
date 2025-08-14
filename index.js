@@ -25,7 +25,7 @@ app.get('/', (req,res)=>{
 }) 
 
 app.get('/no', (req,res)=>{
- res.send("hello no")
+ res.send("hello no nono")
 }) 
 
 
