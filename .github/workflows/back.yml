@@ -41,10 +41,10 @@ jobs:
           script: |
             cd /var/www/final/backend
             npm install
-            if ! pm2 list | grep -q "backend"; then
-              pm2 start index.js --name backend
+            if ! pm2 list | grep -q "finalbackend"; then
+              pm2 start index.js --name finalbackend
             else
-              pm2 restart backend
+              pm2 restart finalbackend
             fi
             pm2 save
 
