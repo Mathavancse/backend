@@ -24,6 +24,10 @@ app.get('/', (req,res)=>{
  res.send("hello mathavan")
 }) 
 
+app.get('/no', (req,res)=>{
+ res.send("hello no")
+}) 
+
 
 
 
