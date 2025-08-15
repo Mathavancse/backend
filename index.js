@@ -21,11 +21,11 @@ app.use(express.json())
 app.use("/api",router)
 
 app.get('/', (req,res)=>{
- res.send("hello mathavan sundar vasanth KT lkjhgfdsdfghjkljhgfdsdghjkkh")
+ res.send("hello mathavan ")
 }) 
 
 app.get('/no', (req,res)=>{
- res.send("hello no nono")
+ res.send("hello no ")
 }) 
 
 
